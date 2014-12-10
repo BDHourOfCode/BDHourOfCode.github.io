@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>Hour Of Code</title>
+<script src="//code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="//getbootstrap.com/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript">(function(e){e(".ripple-effect").click(function(t){var n=e(this);if(n.find(".ink").length==0){n.append("<span class='ink'></span>")}var r=n.find(".ink");r.removeClass("animate");if(!r.height()&&!r.width()){var i=Math.max(n.outerWidth(),n.outerHeight());r.css({height:i,width:i})}var s=t.pageX-n.offset().left-r.width()/2;var o=t.pageY-n.offset().top-r.height()/2;r.css({top:o+"px",left:s+"px"}).addClass("animate")});e(".desc").each(function(){e(this).css("background-image","url("+e(this).attr("data-image")+")")})})(jQuery)</script>
+<link data-noprefix href="//fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic,300,300italic|Roboto+Condensed:300italic,400italic,700italic,400,700,300" rel="stylesheet" />
+<link data-noprefix href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+<style>html{font-size:62.5%}header{font:4rem/2 'Roboto Condensed',sans-serif;user-select:none;cursor:default;text-align:left;padding-left:2em;background-color:#2196F3;color:#fff}header svg{position:absolute;height:1em;width:1em;top:.5em;left:.5em;fill:#fff;border-radius:100%}header svg:hover{background:rgba(255,255,255,0.12)}#viewport{background:#fff;position:absolute;width:100%;height:calc(100% - 8rem);overflow:auto}h1{margin:1rem;font:2rem/1.5 Roboto}figure{position:relative;overflow:hidden}figure img{width:100%}figure figcaption{position:absolute;left:1rem;bottom:1rem;font:2rem Roboto,sans-serif;color:#fff;box-shadow:0 0 30px 20px rgba(0,0,0,0.2);text-shadow:0 0 1px black,0 0 2px rgba(0,0,0,0.8),0 0 3px rgba(0,0,0,0.6),0 0 20px #000;background-color:rgba(0,0,0,0.2);width:100%}.card{position:relative;border-radius:4px;box-shadow:0 1px 1px rgba(0,0,0,0.5);overflow:hidden}section{width:calc(100%-2rem);margin:1rem;margin-bottom:3rem}section .hero{display:block;width:66.7%;border-radius:4px 0 0 4px;overflow:hidden}section .desc{position:absolute;right:0;top:0;width:33.3%;background-size:cover;background-position:center;background-blend-mode:multiply;height:100%;border-radius:0 4px 4px 0;text-shadow:0 0 1px black,0 0 2px rgba(0,0,0,0.8),0 0 3px rgba(0,0,0,0.6),0 0 20px #000;font:700 1.5rem/1.4 Roboto,sans-serif;color:#fff;padding:1rem;transition:.3s ease;text-decoration:none;text-align:right}section .desc.red{background-color:#FF8A80}section .desc.pink{background-color:#FF80AB}section .desc.purple{background-color:#EA80FC}section .desc.deep-purple{background-color:#B388FF}section .desc.indigo{background-color:#8C9EFF}section .desc.blue{background-color:#82B1FF}section .desc.light-blue{background-color:#80D8FF}section .desc.cyan{background-color:#84FFFF}section .desc.teal{background-color:#A7FFEB}section .desc.green{background-color:#B9F6CA}section .desc.light-green{background-color:#CCFF90}section .desc.lime{background-color:#F4FF81}section .desc.yellow{background-color:#FFFF8D}section .desc.amber{background-color:#FFE57F}section .desc.orange{background-color:#FFD180}section .desc.deep-orange{background-color:#FF9E80}section .desc.-brown{background-color:#D7CCC8}section .desc.-grey{background-color:#F5F5F5}section .desc.-blue-grey{background-color:#CFD8DC}section .desc span{font-size:1.2rem;position:absolute;left:1rem;right:1rem;bottom:1rem}section:hover .desc{text-decoration:none}section:hover .desc.red{background-color:#FF5252}section:hover .desc.pink{background-color:#FF4081}section:hover .desc.purple{background-color:#E040FB}section:hover .desc.deep-purple{background-color:#7C4DFF}section:hover .desc.indigo{background-color:#536DFE}section:hover .desc.blue{background-color:#448AFF}section:hover .desc.light-blue{background-color:#40C4FF}section:hover .desc.cyan{background-color:#18FFFF}section:hover .desc.teal{background-color:#64FFDA}section:hover .desc.green{background-color:#69F0AE}section:hover .desc.light-green{background-color:#B2FF59}section:hover .desc.lime{background-color:#EEFF41}section:hover .desc.yellow{background-color:#FF0}section:hover .desc.amber{background-color:#FFD740}section:hover .desc.orange{background-color:#FFAB40}section:hover .desc.deep-orange{background-color:#FF6E40}section:hover .desc.-brown{background-color:#BCAAA4}section:hover .desc.-grey{background-color:#EEE}section:hover .desc.-blue-grey{background-color:#B0BEC5}section:nth-of-type(even) .hero{border-radius:0 4px 4px 0;float:right}section:nth-of-type(even) .desc{border-radius:4px 0 0 4px;text-align:left;right:auto;left:0}section .ink{background:#fff}.ripple-effect{position:relative;overflow:hidden;-webkit-transform:translate3d(0,0,0)}.ink{display:block;position:absolute;pointer-events:none;border-radius:50%;transform:scale(0);background:#000;opacity:.2}@media (min-width: 800px){#viewport{padding:calc(50% - 400px);padding-top:0;padding-bottom:0}}@media (max-width: 700px){section .desc{font-size:1.25rem}}.ink.animate{animation:ripple .5s linear}@keyframes ripple{100%{opacity:0;transform:scale(2.5)}}</style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"</script>
+</head><body>
+
+<header>
+  <a href="http://library.browndeerschools.com/" title="Back to library webpage"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><path d="M30 16.5H11.74l8.38-8.38L18 6 6 18l12 12 2.12-2.12-8.38-8.38H30v-3z"/></svg></a>
+  Hour of Code
+</header>
+<div id="viewport">
+  <h1>Beginner Activities</h1>
+  
+  <section class="card" title="Code with Anna and Elsa">
+    <a href="http://studio.code.org/s/frozen" class="ripple-effect hero">
+      <figure>
+        <img src="//code.org/images/frozen-image.png" />
+        <figcaption>Code with Anna and Elsa</figcaption>
+      </figure>
+    </a>
+    <a href="http://studio.code.org/s/frozen" class="ripple-effect desc blue" data-image="//code.org/images/frozen-image.png">
+      <p>Let's use code to join Anna and Elsa as they explore the magic and beauty of ice. You will create snowflakes and patterns as you ice-skate and make a winter wonderland that you can then share with your friends!</p>
+      <span>tablet friendly • Ages 8+</span>
+    </a>
+  </section>
+  
+  <section class="card" title="Write your first computer program">
+    <a href="http://studio.code.org/hoc/1" class="ripple-effect hero">
+      <figure>
+        <img src="//studio.code.org/assets/logo_tall_hourofcode-1ff365b0d094938502fcf42c9c73cda7.jpg" />
+        <figcaption>Write your first computer program</figcaption>
+      </figure>
+    </a>
+    <a href="http://studio.code.org/hoc/1" class="ripple-effect desc deep-purple" data-image="//studio.code.org/assets/logo_tall_hourofcode-1ff365b0d094938502fcf42c9c73cda7.jpg">
+      <p>Try the basics of computer science with many fun characters and learn to code with Mark Zuckerberg and Angry Birds!</p>
+      <span>phone + tablet friendly • Ages 4+</span>
+    </a>
+  </section>
+  
+  <section class="card" title="Write your first computer program">
+    <a href="http://www.tynker.com/hour-of-code/" class="ripple-effect hero">
+      <figure>
+        <img src="//code.org/images/fit-520/tynker.jpg" />
+        <figcaption>Build your own game in Tinker</figcaption>
+      </figure>
+    </a>
+    <a href="http://www.tynker.com/hour-of-code/" class="ripple-effect desc orange" data-image="//code.org/images/fit-520/tynker.jpg">
+      <p>Try the basics of computer science with many fun characters and learn to code with Mark Zuckerberg and Angry</p>
+      <span>Ages 5-13</span>
+    </a>
+  </section>
+  
+  <section class="card" title="Get creative with Scratch">
+    <a href="http://scratch.mit.edu/hoc2014/" class="ripple-effect hero">
+      <figure>
+        <img src="//code.org/images/fit-520/scratch.jpg" />
+        <figcaption>Get creative with Scratch</figcaption>
+      </figure>
+    </a>
+    <a href="http://scratch.mit.edu/hoc2014/" class="ripple-effect desc indigo" data-image="//code.org/images/fit-520/scratch.jpg">
+      <p>Create interactive games, stories, and animations.</p>
+      <span>flash only • Ages 8+</span>
+    </a>
+  </section>
+  
+  <section class="card" title="Lightbot">
+    <a href="http://lightbot.com/hoc2014.html" class="ripple-effect hero">
+      <figure>
+        <img src="//code.org/images/fit-520/lightbot.jpg" />
+        <figcaption>Lightbot</figcaption>
+      </figure>
+    </a>
+    <a href="http://lightbot.com/hoc2014.html" class="ripple-effect desc red" data-image="//code.org/images/fit-520/lightbot.jpg">
+      <p>Program Lightbot to solve puzzles using procedures and loops!</p>
+      <span>flash or iOS/android • All ages</span>
+    </a>
+  </section>
+  
+  <section class="card" title="Course 1 for pre-readers">
+    <a href="https://learn.code.org/s/course1" class="ripple-effect hero">
+      <figure>
+        <img src="//studio.code.org/assets/logo_tall_course1-0cbb3f4433a12e6e51e6f196d55196e0.jpg" />
+        <figcaption>Course 1 for pre-readers</figcaption>
+      </figure>
+    </a>
+    <a href="https://learn.code.org/s/course1" class="ripple-effect desc lime" data-image="//studio.code.org/assets/logo_tall_course1-0cbb3f4433a12e6e51e6f196d55196e0.jpg">
+      <p>A 20 hour course designed for early readers.</p>
+      <span>Ages 4+ / pre-readers</span>
+    </a>
+  </section>
+  
+  <h1>Learning JavaScript</h1>
+  
+  <section class="card" title="An Introduction to JavaScript">
+    <a href="https://www.khanacademy.org/computing/hour-of-code/hour-of-code-tutorial/v/welcome-hour-of-code" class="ripple-effect hero">
+      <figure>
+        <img src="//code.org/images/fit-520/khanacademy.jpg"/>
+        <figcaption>An Introduction to JavaScript</figcaption>
+      </figure>
+    </a>
+    <a href="https://www.khanacademy.org/computing/hour-of-code/hour-of-code-tutorial/v/welcome-hour-of-code" class="ripple-effect desc -blue-grey" data-image="//code.org/images/fit-520/khanacademy.jpg">
+      <p>Learn the basics of JavaScript programming while creating fun drawings with your code. Do it on your own or with your class!</p>
+      <span>Middle School+</span>
+    </a>
+  </section>
+  
+  <section class="card" title="Learn to Code with Karel the Dog">
+    <a href="https://codehs.com/hourofcode/karel/1?start" class="ripple-effect hero">
+      <figure>
+        <img src="//code.org/images/fit-520/codehs.jpg"/>
+        <figcaption>Learn to Code with Karel the Dog</figcaption>
+      </figure>
+    </a>
+    <a href="https://codehs.com/hourofcode/karel/1?start" class="ripple-effect desc teal" data-image="//code.org/images/fit-520/codehs.jpg">
+      <p>Giving commands to a computer, which is what programming is all about, is just like giving commands to a dog. Learn how to code with Karel the Dog—a fun, accessible, and visual introduction to programming that teaches fundamental concepts like commands and functions to absolute beginners. Tutorial is student-directed but teachers can sign up to access teacher tools and track student success!</p>
+      <span>High School</span>
+    </a>
+  </section>
+  
+  <section class="card" title="Codecademy">
+    <a href="http://www.codecademy.com/courses/hour-of-code/0/1" class="ripple-effect hero">
+      <figure>
+        <img src="//code.org/images/fit-520/codecademy.jpg"/>
+        <figcaption>Codecademy</figcaption>
+      </figure>
+    </a>
+    <a href="http://www.codecademy.com/courses/hour-of-code/0/1" class="ripple-effect desc deep-purple" data-image="//code.org/images/fit-520/codecademy.jpg">
+      <p>Codecademy is an interactive, student-guided introduction to the basics of CS through JavaScript that's used by tens of millions of students around the world. We've prepared a no-hassle Hour of Code experience with accompanying quizzes, slides, and a completed project for students at the end.</p>
+      <span>High School+</span>
+    </a>
+  </section>
+  
+  <section class="card" title="Code Combat: Defeat Ogres with Java & Python">
+    <a href="http://codecombat.com/?hour_of_code=true" class="ripple-effect hero">
+      <figure>
+        <img src="//code.org/images/fit-520/codecombat.jpg"/>
+        <figcaption>Code Combat: Defeat Ogres with Java & Python</figcaption>
+      </figure>
+    </a>
+    <a href="http://codecombat.com/?hour_of_code=true" class="ripple-effect desc light-blue" data-image="//code.org/images/fit-520/codecombat.jpg">
+      <p>Defeat ogres to learn Python or JavaScript in this epic programming game!</p>
+      <span>Middle School+</span>
+    </a>
+  </section>
+  
+  <section class="card" title="Build A Game with JavaScript: Code Avengers">
+    <a href="http://www.codeavengers.com/javascript/17#1.1" class="ripple-effect hero">
+      <figure>
+        <img src="//code.org/images/fit-520/codeavengers.jpg"/>
+        <figcaption>Build A Game with Java Script: Code Avengers</figcaption>
+      </figure>
+    </a>
+    <a href="http://www.codeavengers.com/javascript/17#1.1" class="ripple-effect desc red" data-image="//code.org/images/fit-520/codeavengers.jpg">
+      <p>Build a 2 player 2D top-down game with JavaScript in 10 short tasks. Then continue learning some basics of programming (variables and if statements) as you create a Quiz to share with friends. Along the way earn points and badges as you compete to reach the top of the class leaderboard.</p>
+      <span>Middle School+</span>
+    </a>
+  </section>
+  
+  <h1>Coding Offline</h1>
+  
+  <section class="card" title="My Robotic Friends">
+    <a href="http://csedweek.org/unplugged/thinkersmith" class="ripple-effect hero">
+      <figure>
+        <img src="//code.org/images/fit-520/roboticfriends.jpg"/>
+        <figcaption>My Robotic Friends</figcaption>
+      </figure>
+    </a>
+    <a href="http://csedweek.org/unplugged/thinkersmith" class="ripple-effect desc -brown" data-image="//code.org/images/fit-520/roboticfriends.jpg">
+      <p>Using a pre-defined "Robot Vocabulary" students will figure out how to guide each other to accomplish specific tasks without discussing them first. This lesson teaches children the connection between symbols and actions, as well as the invaluable skill of debugging. "My Robotic Friends" works best as a group activity and includes a teacher workbook for classroom use.</p>
+      <span>All Ages</span>
+    </a>
+  </section>
+  
+  <section class="card" title="Conditionals with Cards">
+    <a href="http://code.org/files/ConditionalsHoC.pdf" class="ripple-effect hero">
+      <figure>
+        <img src="//code.org/images/fit-520/ccards.jpg"/>
+        <figcaption>Conditionals with Cards</figcaption>
+      </figure>
+    </a>
+    <a href="http://code.org/files/ConditionalsHoC.pdf" class="ripple-effect desc -brown" data-image="//code.org/images/fit-520/ccards.jpg">
+      <p>Learn about algorithms and conditional statements in this "unplugged" activity using a deck of cards. Students do this activity in teams, and need one deck of cards per team.</p>
+      <span>Ages 8-12</span>
+    </a>
+  </section>
+  
+  <section class="card" title="Binary Baubles">
+    <a href="http://code.org/files/CSEDbinary.pdf" class="ripple-effect hero">
+      <figure>
+        <img src="//code.org/images/fit-520/binarybaubles.jpg"/>
+        <figcaption>Binary Baubles</figcaption>
+      </figure>
+    </a>
+    <a href="http://code.org/files/CSEDbinary.pdf" class="ripple-effect desc -brown" data-image="//code.org/images/fit-520/binarybaubles.jpg">
+      <p>Students learn about representing and storing letters in binary, as functions of on and off. At the end, the class gets to encode their own initials to take home with them.</p>
+      <span>Ages 8+</span>
+    </a>
+  </section>
+  
+  <section class="card" title="Blockly">
+    <a href="https://github.com/google/blockly-games/wiki/Offline" class="ripple-effect hero">
+      <figure>
+        <img src="//code.org/images/fit-520/blockly.jpg"/>
+        <figcaption>Blocky</figcaption>
+      </figure>
+    </a>
+    <a href="https://github.com/google/blockly-games/wiki/Offline" class="ripple-effect desc -blue-grey" data-image="//code.org/images/fit-520/blockly.jpg">
+      <p>Got PCs with slow (or non-existent) internet access? Download the Blockly tutorials that were the precursor of the Code.org tutorials - a single 3MB ZIP file can be loaded onto any computer or used off a memory stick.</p>
+      <span>All Ages</span>
+    </a>
+  </section>
+  
+  <section class="card" title="fuzzFamily Frenzy">
+    <a href="https://www.kodable.com/hour-of-code" class="ripple-effect hero">
+      <figure>
+        <img src="//code.org/images/fit-520/fuzzfrenzy.jpg"/>
+        <figcaption>fuzzFamily Frenzy</figcaption>
+      </figure>
+    </a>
+    <a href="https://www.kodable.com/hour-of-code" class="ripple-effect desc blue" data-image="//code.org/images/fit-520/fuzzfrenzy.jpg">
+      <p>Designed for use with plain paper, the fuzzFamily Frenzy is an introduction to programming logic for kids 5 and up. A teacher should explain the game, then students program a partner to complete a simple obstacle course.</p>
+      <span>Ages 8-13</span>
+    </a>
+  </section>
+  
+  <section class="card" title="Rock Paper Scissors">
+    <a href="http://code.org/files/PGUTSRockPaperScissors.pdf" class="ripple-effect hero">
+      <figure>
+        <img src="//code.org/images/fit-520/guts.jpg"/>
+        <figcaption>Rock Paper Scissors</figcaption>
+      </figure>
+    </a>
+    <a href="http://code.org/files/PGUTSRockPaperScissors.pdf" class="ripple-effect desc -brown" data-image="//code.org/images/fit-520/guts.jpg">
+      <p>This "unplugged" activity helps students learn how modeling and simulation works by having a group of students play different versions of the Rock / Paper / Scissors game, and see the results as different modeling experiments.</p>
+      <span>Ages 10-13</span>
+    </a>
+  </section>
+  
+  <h1>Tutorials in Other Programming Languages</h1>
+  
+  <section class="card" title="Code Monkey">
+    <a href="http://www.playcodemonkey.com/challenges/0" class="ripple-effect hero">
+      <figure>
+        <img src="//code.org/images/fit-520/codemonkey.jpg"/>
+        <figcaption>Code Monkey</figcaption>
+      </figure>
+    </a>
+    <a href="http://www.playcodemonkey.com/challenges/0" class="ripple-effect desc teal" data-image="//code.org/images/fit-520/codemonkey.jpg">
+      <p>CodeMonkey is an online game that teaches coding in a real programming language! Students program a monkey to catch bananas while it gets slightly more complicated on each level. They get star scores on each solution and can share it in a single click.</p>
+      <span>High School</span>
+    </a>
+  </section>
+  
+  <section class="card" title="Drawing with Code: Procesing">
+    <a href="http://hello.processing.org/" class="ripple-effect hero">
+      <figure>
+        <img src="//code.org/images/fit-520/processing.jpg"/>
+        <figcaption>Drawing with Code: Procesing</figcaption>
+      </figure>
+    </a>
+    <a href="http://hello.processing.org/" class="ripple-effect desc blue" data-image="//code.org/images/fit-520/processing.jpg">
+      <p>An introduction to programming in the context of the visual arts using the Processing programming language. Short video lessons introduce coding exercises that lead to designing an interactive drawing program.</p>
+      <span>High School</span>
+    </a>
+  </section>
+  
+  <section class="card" title="Program a virtual robot">
+    <a href="https://www.robomindacademy.com//go/navigator/storylines?course=HourOfCode" class="ripple-effect hero">
+      <figure>
+        <img src="//code.org/images/fit-520/robomind.jpg"/>
+        <figcaption>Program a virtual robot</figcaption>
+      </figure>
+    </a>
+    <a href="https://www.robomindacademy.com//go/navigator/storylines?course=HourOfCode" class="ripple-effect desc deep-purple" data-image="//code.org/images/fit-520/robomind.jpg">
+      <p>Students learn the basics of programming by controlling their own virtual robot. The online course is fully self-contained with short presentations, movies, quizzes and automatic guidance/hints to help with the programming exercises.</p>
+      <span>Ages 8-13</span>
+    </a>
+  </section>
+  
+  <section class="card" title="Eliza the Chatterbot Doctor">
+    <a href="https://groklearning.com/hoc-2014/" class="ripple-effect hero">
+      <figure>
+        <img src="//code.org/images/fit-520/groklearning.jpg" />
+        <figcaption>Eliza the Chatterbot Doctor</figcaption>
+      </figure>
+    </a>
+    <a href="https://groklearning.com/hoc-2014/" class="ripple-effect desc deep-purple" data-image="//code.org/images/fit-520/groklearning.jpg">
+      <p>Use the programming language Python to build a chatbot called "Eliza" to act as a robot psychotherapist. You'll teach Eliza how to talk and the right thing to say. Can she fool your friends into thinking she's a human not a computer?</p>
+      <span>Middle School+</span>
+    </a>
+  </section>
+  
+  <section class="card" title="Quorum: Accessible Programming">
+    <a href="http://quorumlanguage.com/documents/hourofcode/part1.php" class="ripple-effect hero">
+      <figure>
+        <img src="//code.org/images/fit-520/quorum.jpg" />
+        <figcaption>Quorum: Accessible Programming</figcaption>
+      </figure>
+    </a>
+    <a href="http://quorumlanguage.com/documents/hourofcode/part1.php" class="ripple-effect desc -brown" data-image="//code.org/images/fit-520/quorum.jpg">
+      <p>This tutorial is accessible for the visually-impaired, and works with screenreaders. Join Mary on a tour as she joins a biology lab as a programmer and learns the Quorum programming language. This tutorial is student-guided with online example activities.</p>
+      <span>Screen Reader Support • Middle School+</span>
+    </a>
+  </section>
+  
+  <h1>Make Your Own App or Game</h1>
+  
+  <section class="card" title="Flappy Code">
+    <a href="http://studio.code.org/flappy/1" class="ripple-effect hero">
+      <figure>
+        <img src="//studio.code.org/assets/logo_tall_flappy-5d52f06d34e4bdd48654c5e79d64325a.jpg" />
+        <figcaption>Flappy Code</figcaption>
+      </figure>
+    </a>
+    <a href="http://studio.code.org/flappy/1" class="ripple-effect desc green" data-image="//studio.code.org/assets/logo_tall_flappy-5d52f06d34e4bdd48654c5e79d64325a.jpg">
+      <p>Wanna write your own game in less than 10 minutes? Try the Flappy Code tutorial!</p>
+      <span>All Ages</span>
+    </a>
+  </section>
+  
+  <!-- BLOCKED?
+  <section class="card" title="Make your own Apps on a Virtual Tablet">
+    <a href="https://bitsbox.com/hoc.html" class="ripple-effect hero">
+      <figure>
+        <img src="//code.org/images/fit-520/bitsbox.jpg" />
+        <figcaption>Make your own Apps on a Virtual Tablet</figcaption>
+      </figure>
+    </a>
+    <a href="https://bitsbox.com/hoc.html" class="ripple-effect desc amber" data-image="//code.org/images/fit-520/bitsbox.jpg">
+      <p>Around here, kids learn to code by making apps on imaginary tablets—with real Javascript! The apps run on phones and iPads, too.</p>
+      <span>All Ages</span>
+    </a>
+  </section>
+  -->
+  
+  <section class="card" title="Learn to code with MIT App Inventor">
+    <a href="http://appinventor.mit.edu/explore/hour-of-code.html" class="ripple-effect hero">
+      <figure>
+        <img src="//i.ytimg.com/vi/0hikoCvM3oc/maxresdefault.jpg" />
+        <figcaption>Learn to code with MIT App Inventor</figcaption>
+      </figure>
+    </a>
+    <a href="http://appinventor.mit.edu/explore/hour-of-code.html" class="ripple-effect desc -blue-grey" data-image="//i.ytimg.com/vi/0hikoCvM3oc/maxresdefault.jpg">
+      <p>With these beginner-friendly tutorials, you will learn the basics of programming apps for Android.</p>
+      <span>Ages 8+</span>
+    </a>
+  </section>
+  
+  <section class="card" title="Build an iPhone game in your browser">
+    <a href="http://www.makegameswith.us/build-an-iphone-game-in-your-browser/" class="ripple-effect hero">
+      <figure>
+        <img src="//static.makegameswith.us/static/img/build-flappy-bird-in-your-browser.1c7abf50840c.png" />
+        <figcaption>Build an iPhone game in your browser</figcaption>
+      </figure>
+    </a>
+    <a href="http://www.makegameswith.us/build-an-iphone-game-in-your-browser/" class="ripple-effect desc green" data-image="//static.makegameswith.us/static/img/build-flappy-bird-in-your-browser.1c7abf50840c.png">
+      <p>Learn the basics of the Swift programming language right in the browser by creating a Flappy Bird game.</p>
+      <span>Advanced</span>
+    </a>
+  </section>
+  
+  <section class="card" title="Touch Develop">
+    <a href="https://www.touchdevelop.com/hourofcode2" class="ripple-effect hero">
+      <figure>
+        <img src="//az31353.vo.msecnd.net/pub/wmqrtogj" />
+        <figcaption>Touch Develop</figcaption>
+      </figure>
+    </a>
+    <a href="https://www.touchdevelop.com/hourofcode2" class="ripple-effect desc -blue-grey" data-image="//az31353.vo.msecnd.net/pub/wmqrtogj">
+      <p>Create your apps on your phone, tablet or laptop.</p>
+      <span>Moderate</span>
+    </a>
+  </section>
+  
+  
+  
+  <h1>After the hour of code</h1>
+  
+  <section class="card" title="Hello Ruby">
+    <a href="http://www.helloruby.com/play" class="ripple-effect hero">
+      <figure>
+        <img src="//www.helloruby.com/assets/header-play-301f7a96f13cd5eb119e9e0533fc3486.jpg" />
+        <figcaption>Hello Ruby</figcaption>
+      </figure>
+    </a>
+    <a href="http://www.helloruby.com/play" class="ripple-effect desc pink" data-image="//www.helloruby.com/assets/header-play-301f7a96f13cd5eb119e9e0533fc3486.jpg">
+      <p>Learn about computers, programming, and technology through these free, fun activities.</p>
+      <span>Ages 5-8</span>
+    </a>
+  </section>
+  
+</div>
+
+</body></html>
